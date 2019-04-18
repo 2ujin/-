@@ -1,0 +1,98 @@
+<!doctype html>
+<html> 
+  <meta charset = "utf-8">
+  <title>오할내미</title>
+ <head>
+    <style>
+      canvas{
+        background-image: url("choose.png");
+        background-size: contain; 
+      }
+      button{
+        border: none;
+        background-color: transparent;
+      }
+      .form{
+        position: absolute;
+        align-content: center;
+         top: 280px;
+        left: 98px;
+    }
+      .next{
+        position: absolute;
+        top: 520px;
+        left: 668px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }
+      .boy{
+        position: absolute;
+        top: 120px;
+        left: 90px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      } .girl{
+        position: absolute;
+        top: 300px;
+        left: 250px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }
+      @keyframes leaves {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    0%{
+      
+    }
+}
+  .divv{
+    position: absolute;
+        top: 160px;
+        left: 350px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+  }
+      .divv:hover{
+        position: absolute;
+        top: 160px;
+        left: 350px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+        animation-name: leaves;
+        animation-duration: 1s;
+      }
+      .divv1{
+    position: absolute;
+        top: 350px;
+        left: 350px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+  }
+      .divv1:hover{
+        position: absolute;
+        top: 350px;
+        left: 350px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+        animation-name: leaves;
+        animation-duration: 1s;
+      }
+    </style>
+</head>
+ <body>
+    <canvas width="800" height="600" id = "canvas"></canvas>  
+<div class="divv"><img src = "boy.png" onclick="location.href='typing.html'" ></div>
+<div class="divv1"><img src = "girl.png" onclick="buttonadd()"></div>
+<form id = "myForm" action="" class="form">
+</form>
+<!-- <button class = "next" onclick="buttonadd()"><img src = "next.png"></button> -->
+<!-- <button class = "see" onclick="location.href='test1'">보기</button> -->
+<script src = "start.js"></script>
+<script></script>
+
+  </body>
+</html>

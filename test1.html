@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                canvas{
+                  background-image: url("bg.png");
+                  background-size: contain; 
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                 }
+                .form{
+                    position: absolute;
+                    align-content: center;
+                     top: 150px;
+                    left: 85px;
+                }
+                h3{
+                    position: absolute;
+                    align-content: center;
+                    top: 30px;
+                    left: 270px;
+        
+                }
+        .btn{
+        position: absolute;
+        top: 520px;
+        left: 150px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }  
+      .btn1{
+        position: absolute;
+        top: 540px;
+        left: 710px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }  
+      .btn2{
+        position: absolute;
+        top: 520px;
+        left: 280px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }      
+      .btn33{
+        position: absolute;
+        top: 154px;
+        left: 723px;
+        font-size: 34px;
+        color: rgb(73, 66, 73);
+      }    
+      .img{
+        position: absolute;
+        align-content: center;
+          z-index: -1;
+        top: 102px;
+        left: 729px;
+    }
+      .img1{
+        position: absolute;
+        align-content: center;
+        top: 540px;
+        left: 389px;
+        }
+        
+        input[id="chboxx"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: -45px;
+     left: 650px;
+}
+    input[id="chbox"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 3px;
+     left: 650px;
+}
+
+input[id="chbox1"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 56px;
+     left: 650px;
+}
+
+input[id="chbox2"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 107px;
+     left: 650px;
+}
+
+input[id="chbox3"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 155px;
+     left: 650px;
+}
+
+input[id="chbox4"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 205px;
+     left: 650px;
+}
+input[id="chbox5"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 255px;
+     left: 650px;
+}
+input[id="chbox6"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 305px;
+     left: 650px;
+}
+input[id="chbox7"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 355px;
+     left: 650px;
+}
+input[id="chbox8"]{
+    position: absolute;
+    align-content: center;
+  /* Double-sized Checkboxes */
+     -ms-transform: scale(2); /* IE */
+     -moz-transform: scale(2); /* FF */
+     -webkit-transform: scale(2); /* Safari and Chrome */
+     -o-transform: scale(2); /* Opera */
+     padding: 10px;
+     top: 405px;
+     left: 650px;
+}
+input[id="check"]{
+    position: absolute;
+    align-content: center;
+    background: url( "checkbox.png" ) no-repeat;
+  /* Double-sized Checkboxes */
+     border: none;
+    width: 50px;
+    height: 32px;
+     top: -104px;
+     left: 645px;
+}
+</style>
+    <title>일정추가</title>
+</head>
+<!-- <script language="javascript">
+    function selectChkBox(frm) {
+    
+    var sum = 0;
+    var count = frm.checkbox.length;
+      for(var i=0; i < count; i++ ){
+           if( frm.checkbox[i].checked == true ){
+            sum += 1;
+            }
+      } 
+      alert("선택되어진 체크박스의 갯수는 " + sum + "개입니다." );
+    }
+    //-->
+    </script> 
+<body>
+    <canvas width="800" height="600" id ="canvas"></canvas>
+    <!-- <img id = "img" src="hi.png" class="img"></img> -->
+    <!-- <center><h3>일정을 추가해주세요 :3</h3></center> -->
+    <form id = "myForm" action="" class="form" name = "myForm">
+    <center><input type = "text" size="2" id="pmonth" name="arr">&nbsp;월 
+        <input type = "text" size="2" id = "pday" name="arr">&nbsp;일</center> <br>
+    <center>제목 <input type = "text" size="8" placeholder="일정 제목은?" id="ptitle" name="arr"></center> <br>
+    <!-- <center><input type = "text" size="8" placeholder="내용을 적어주세요 :)"></center><br> -->
+    <center><textarea rows="10" cols="25" placeholder="내용을 적어주세요 :)" id="pcontent"></textarea></center><br>
+    <center>분류 <select name ="ptype" id="ptype">
+        <option value = "sproject">학교과제</option>
+        <option value = "stest">수행평가</option>
+        <option value = "scontest">공모전</option>
+        <option value = "sexam">시험공부</option>
+        <option value = "sstudy">스터디</option>
+    </select></center><br>
+    <center> 중요도 <select name = "pimport" id="pimport">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value = "2">★★☆☆☆</option>
+        <option value="1">★☆☆☆☆</option>    
+    </select></center><br>
+    <input name="checkbox" type="checkbox" value="" id="chboxx"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox1"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox2"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox3"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox4"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox5"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox6"><br>
+    <input name="checkbox" type="checkbox" value="" id="chbox7"><br>
+    <input type=button value="" id="check" onClick="selectChkBox(this.form)">
+    <!-- <button class="btn1" onclick="selectChkBox(this.form)" ><img src="see.png"></button> -->
+    </form>
+    <!-- <img src = "box.png" class = "img" onclick="change()" id="img"></img> -->
+    <!-- <img src = "box.png" class = "img1" onclick="sort2()" id="img1"></img> -->
+    <button class="btn" onclick="init()" ><img src="save.png"></button>
+
+    <!-- <img src="bar.png" class="img1"> -->
+    <!-- <button class="btn2" onclick=  "location.href='start.html'"; ><img src="save.png"></button> -->
+    <script src = "start.js"></script>
+    <script src = "list.js"></script>
+</body>
+
+
+<!-- <script src = "list.js"></script> -->
+</html>

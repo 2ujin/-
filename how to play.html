@@ -1,0 +1,93 @@
+<!doctype html>
+<html> 
+  <meta charset = "utf-8">
+  <title>오할내미</title>
+ <head>
+    <style>
+      canvas{
+        background-image: url("bg2.png");
+        background-size: contain; 
+      }
+      div{
+        border: none;
+        background-color: transparen;
+        font-family: 배달의민족 도현;
+        align-content: center;
+      }
+      button{
+        border: none;
+        background-color: transparent;
+      }
+      @keyframes blur {
+        0%   {
+          color: rgb(146, 142, 146);
+        }
+        50% {
+          color: purple;
+          }}
+
+         @keyframes scale {
+          0%   {
+            color: rgb(146, 142, 146);
+          }
+          50% {
+            color: rgb(34, 0, 128);
+            }
+            }
+
+      .text1{
+        position: absolute;
+        top: 170px;
+        left: 160px;
+        font-size: 26px;
+        color: rgb(73, 66, 73);
+        animation-name: blur;
+        animation-duration: 3s;
+      }
+      .text2{
+        position: absolute;
+        top: 250px;
+        left: 145px;
+        font-size: 26px;
+        color: rgb(73, 66, 73);
+        animation-name: blur;
+        animation-duration: 13s;
+      }
+      .text3{
+        position: absolute;
+        top: 330px;
+        left: 100px;
+        font-size: 26px;
+        color: rgb(73, 66, 73);
+        animation-name: blur;
+        animation-duration:23s;
+      }
+      .text4{
+        position: absolute;
+        top: 430px;
+        left: 80px;
+        align-content: center;
+        font-size: 28px;
+        color: rgb(73, 66, 73);
+        animation-name: scale;
+        animation-duration: 43s;
+      }
+      .back{
+        position: absolute;
+        top: 520px;
+        left: 690px;
+      }
+      a{
+          color: rgb(43, 78, 57);
+      }
+    </style>
+</head>
+ <body>
+    <canvas id = "myCanvas" width="800" height="600"></canvas>
+    <div class="text1">1. 하루단위로 해야할 일을 적어주세요 !!</div>
+    <div class="text2">2. 해야할 일의 <a>★중요도★</a>를 선택해주세요 !</div>
+    <div class="text3">3. 또한, 걸리는 시간과 분류항목도 입력해주세요 ㅎㅎ</div>
+    <div class="text4">그럼 규칙에 맞게 어떤 일을 먼저해야 더욱 효과적이게 <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;시간을 보낼 수 있는 지 알려줍니다 ^0^</div>
+    <button class="back" onclick="location.href='project.html'"><img src = "backback.png"></button> 
+  </body>
+</html>
